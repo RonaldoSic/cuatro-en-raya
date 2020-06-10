@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/agenteVSplayer.css">
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <title>Agente vs Jugador</title>
+</head>
+<body>
+    <section class="wrapper">
+        <div class="box-title">
+            <h3>Agente vs Jugador</h3>
+            <a href="./index.html">Home</a>
+        </div>
+        <div class="tablero_container">
+            <div class="table_bg"></div>
+            <div class="grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+                <div class="token"></div>
+            </div>
+        </div>
+        <!-- opciones del juego -->
+        <div class="container_options">
+            <!-- Jugador -->
+            <div class="container">
+                <!--  -->
+                <div class="container_token">
+                    <img id="tk_diamant" class="token" src="src/img/CircleDiamant.svg" alt="">
+                    <img id="tk_mikey" class="token" src="src/img/CircleMikey.svg" alt="">
+                    <img id="tk_cruss" class="token" src="src/img/CircleEx.svg" alt="">
+                    <img id="tk_line" class="token" src="src/img/CircleLine.svg" alt="">
+                </div>
+                <!--  -->
+                <div class="player cont_jugador">
+                    <img class="icon_player jugador" src="src/img/Player.svg" alt="jugador">
+                    <h4 class="player1" id="namePlayer2">Jugador</h4>
+                    <span id="c-2"></span>
+                </div>
+            </div>
+            <!-- Agente -->
+            <div class="container">
+                <div class="container_token">
+                    <img id="tk_srtat" class="token" src="src/img/CircleStart.svg" alt="">
+                    <img id="tk_rectangle" class="token" src="src/img/CircleRectangle.svg" alt="">
+                    <img id="tk_triangle" class="token" src="src/img/CircleTriangle.svg" alt="">
+                    <img id="tk_circle" class="token" src="src/img/CircleCircle.svg" alt="">
+                </div>
+                <!--  -->
+                <div class="player cont_agente">
+                    <img class="icon_player agente" src="src/img/Agente.svg" alt="agente">
+                    <h4 class="player2" id="namePlayer1">Agente</h4>
+                    <span class="current-1" id="c-1"></span>
+                </div>
+            </div>
+        </div>
+
+        <!--  -->
+        <div class="container_alert">
+            <div id= "cronometro" class="item_alert">
+                <p id="hms"></p>
+            </div>
+
+            <div class="item_alert">
+                <p id="result"></p>
+            </div>
+
+        </div>
+        <div class="cont_btn">
+            <button id="resetGame">Reiniciar Juego</button>
+        </div>    
+    </section>
+    <script src="src/js/agenteVSplayer.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+/*  */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    margin: 0;
+    padding: 0;
+    background-color: #02242c;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    width: 414px;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #fff;    
+    /* display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    margin: 0;
+    padding: 0;
+    top: 0;
+    /* position: relative; */
+}
+.box-title{
+    width: 100%;
+    background: linear-gradient(180deg, #02a7f3 0%, #f6f8face 100%);
+    height: 20%;
+    color: #ca520c;
+    height: 2em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box-title a{
+    color: #8505fd;
+    text-decoration: none;
+    font-size: 1.3em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+.box-title a:hover{
+    transition: all ease-in-out .4s;
+    color: #bb07e7;
+}
+
+.tablero_container {
+    position: relative;
+    width: 100%;
+}
+.tablero_container .table_bg {
+    position: relative;
+    width: 100%;
+    height: 430px;
+    background: linear-gradient(180deg, #ff8800 20%, #09a6c2 100%);
+}
+.player1 {
+    display: inline-block;
+    text-align: center;
+    grid-area: left;
+    width: 200px;
+}
+.player2 {
+    display: inline-block;
+    text-align: center;
+    grid-area: right;
+    width: 200px;
+}
+.current-1 {
+    background: black;
+}
+
+.current-2 {
+    background: black;
+}
+
+.grid {
+    top: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    position: absolute;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    height: 430px;
+}
+
+.grid div {
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.grid .token{
+    background-color: transparent;
+}
+
+.player-one {
+    background-image: url(../img/CircleDiamant.svg);    
+    border-radius:50%;
+}
+
+.player-two {    
+    background-image: url(../img/CircleStart.svg);    
+    border-radius:50%;
+}
+.title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+/* Mu code */
+.container_options {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+}
+.container_options .container {
+    width: 100%;
+    padding: 2% 20px;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    align-self: center;
+}
+
+/* My code */
+.container_options .container .container_token {
+    height: 46px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+    align-items: center;
+    align-self: center;
+}
+
+.container .player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.agente {
+    width: 44px;
+    height: 24px;
+}
+
+.jugador {
+    width: 43px;
+    height: 44px;
+}
+
+.player h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    color: #074996;
+    font-weight: 600;
+}
+
+/*  */
+.player .actually-current {
+    width: 100%;
+    height: 20px;
+    background-color: #055063;
+}
+
+/*  */
+.container_alert {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+}
+
+.item_alert {
+    width: 48%;
+    height: 34px;
+    background-color: #ffffff;
+    box-shadow: 2px 6px 8px #4e4d4d4d, -2px -6px 8px #888d993b,
+    inset -2px -6px 8px #c2b9b979,
+    inset 2px 6px 8px #9798f734;
+    margin-top: 1%;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center;
+    z-index: 3;
+}
+.item_alert p{
+    font-size: 20px;
+}
+#cronometro p{
+    color: #2626ac;
+    font-size: 24px;
+    font-weight: 700;
+}
+/*  */
+.cont_btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    /* border: 1px solid #055063; */
+}
+.cont_btn #resetGame{
+    width: 90%;
+    text-align: center;
+    height: 36px;
+    outline: none;
+    background-color: #067da1;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 1.8em;
+    border: none;    
+}
+#resetGame:hover {
+    background-color: #065770;
+    font-size: 2em;
+    transition:all ease-out 1s;
+}
